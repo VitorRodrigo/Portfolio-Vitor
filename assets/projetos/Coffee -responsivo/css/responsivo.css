@@ -1,0 +1,166 @@
+@media screen and (max-width:1200px){
+  body{
+    padding: 0;
+    margin: auto;
+  }
+    .section-inicial{
+    padding:0 ;
+    margin: auto;
+    flex-wrap: wrap;
+    
+  } 
+  .div-section-inicial{
+        /left: 0; 
+        display: flex;
+        margin-top: 80px;
+        padding-left: 0; 
+        padding-right: 0;
+        margin: auto;
+  }
+  .section-inicial img{
+    margin: auto;
+    width:100vh;
+    height: 100hv;
+  }
+  .aside-primaria{
+    flex-wrap: wrap;
+    padding: 0;
+    margin: auto;
+  }
+  .aside-primaria-imagem{
+    display: flex;
+    margin-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+  }
+  .aside-primaria-imagem img{
+    width:100vh;
+    height: 100hv;
+    margin: auto;
+    padding: auto;
+  }
+  .menu-cafe{
+    display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+    
+}
+.menu-cafe1{
+    display: flex;
+  flex-wrap: wrap;
+}
+.div-section-cafes{
+    margin: auto;
+}
+.div-section-cafes2{
+    margin: auto;
+}
+.div-section-cafes3{
+    margin: auto;
+}
+.div-section-cafes4{
+    margin: auto;
+}
+.div-section-cafes5{
+    margin: auto;
+}
+.div-section-cafes6{
+    margin: auto;
+}
+.aside-pagamentos ul{
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+    
+}
+.aside-pagamentos li{
+    margin: auto;
+}
+
+@media screen and (max-width: 820px)  {
+    .cafes-acessorios{
+        display: block;
+        margin: auto;
+    } 
+    .cafes{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .acessorios{
+        width: 50%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mapa{
+        width: 50%;
+        height: 449px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div-section-inicial img {
+        width: 60%;
+    }
+    
+    .aside-primaria-imagem img{
+        width: 60%;
+        padding-left: ;
+        
+    }
+}
+
+@media screen and (max-width:530px) {
+    .footer{
+        flex-wrap: wrap;
+        display: block;
+    }
+    .footer-redes li{
+        display:;
+        flex-wrap: wrap;
+    }
+    .rodape{
+        flex-wrap: wrap; 
+    }
+   .header h1{
+        font-size: 25px;
+    }
+    .section-inicial-texto h3{
+        font-size: 45px;
+    }
+    .aside-primaria-texto h3{
+        font-size: 45px;
+    }
+    .section-cafe-texto h3{
+        font-size: 45px;
+    }
+    .cafes h3{
+        font-size: 40px;
+        margin: auto;
+    }
+    .cafes p{
+        margin: auto;
+    }
+    .acessorios h3{
+        font-size: 40px;
+        margin: auto;
+    }
+    .acessorios p{
+        margin: auto;
+    }
+    
+    
+}
+@media screen and(max-width:430px) {
+    .nome-cafe{
+        width: 150px;
+        color: yellow;
+        margin: auto;
+    }
+    .botao{
+        width: 60%;
+        margin: auto;
+    }
+    
+}

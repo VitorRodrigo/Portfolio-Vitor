@@ -1,0 +1,333 @@
+:root{
+    --cor-letras:#52FA34;
+    --cor-fundo: #1C1C1C;
+    --cor-letras-principais:#F0F8FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor-fundo);
+    font-family: 'Saira', sans-serif;
+}
+.cabecalho{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Saira', sans-serif;
+    padding-top: 10px;
+    background-color: var(--cor-fundo);
+    border-bottom: 2.5px solid var(--cor-letras);
+}
+.cabecalho h2{
+   color:var(--cor-letras-principais);
+   
+}
+.cabecalho-nav li {
+    display: inline-block;
+    padding-left: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Saira', sans-serif;
+   
+    
+}
+.cabecalho-nav a{
+    color: var(--cor-letras);
+   text-decoration: none;
+
+}
+.section-inicial{
+   display: flex;
+    margin-top: 100px;
+   
+}
+.section-inicial-texto {
+    font-size: 26px;
+    color: var(--cor-letras);
+    margin: auto;
+    
+    
+}
+.section-inicial-texto p{
+    width: 420px;
+    white-space: pre-line;
+}
+p::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca{
+    0% , 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.section-inicial-imagem{
+    margin: auto;
+      
+}
+.section-inicial-imagem img{
+    width: auto;
+    height: auto;
+}
+.section-sobre{
+    display: flex;
+    margin-top: 150px;
+}
+.section-sobre-div {
+    margin:auto;
+    width:500px;
+    height: auto;
+    font-family: 'Saira', sans-serif;
+    color: var(--cor-letras);
+    font-size: 25px;
+}
+.section-sobre-div h1{
+    margin-bottom: 50px;
+}
+.titulo h1{
+    font-family: 'Saira', sans-serif;
+    color: var(--cor-letras);
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+    font-size: 37.5px;
+}
+.rodape{
+    border-top: 2.5px solid var(--cor-letras);
+    display: flex;
+    color: var(--cor-letras);
+    text-align: center;
+    font-family: 'Saira',sans-serif;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.rodape p{
+    text-align: center;
+    font-family: 'Saira','sans-serif';
+    color: var(--cor-letras);
+    width: 100%;
+   
+}
+.rodape ul{
+    display: flex;
+    
+}
+.rodape li img{
+    width: 55px;
+    padding-left: 20px;
+}
+
+
+.section-sobre-img{
+   margin: auto;
+}
+.perfil {
+    width: 250px;
+}
+.redes{
+    display: flex;
+    width: 150px;
+    margin-top: 20px;
+    justify-items: center;
+}
+.redes img{
+    width: 45px;
+    padding-left: 20px;
+    
+}
+.container-image{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 30px;
+    justify-content: space-around;
+
+}
+@keyframes fadeIn{
+    0%{
+        transform: scale(.7) translateY(-10); 
+        opacity: 0;
+    }
+}
+.image{
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 200, 250);
+    cursor: pointer;
+    box-shadow: 0 5px 10px  rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 15px;
+    animation: fadeIn .2s linear;
+}
+.image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px ;
+    border-radius: 5px ;
+}
+.image img:hover{
+    transform: scale(1.2);
+}
+.image h3{
+    font-size: 20px;
+    color: #2c3e50;
+}
+@media(max-width:768px){
+    .container-image{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 25px 20px;
+    }
+    .image{
+        width: 100%;
+
+    }
+}
+@media (max-width:450px){
+    .container-image{
+     display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 25px 20px;
+}
+
+.image{
+    width: 100%;
+}
+}
+@media  (max-width:1350px) {
+    .section-inicial-imagem img{
+        width:250px;
+    }
+    .perfil img{
+        width: 250px;
+    }
+    
+}
+.conhecimentos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding:0  50px;
+    justify-content: space-between;
+   
+
+}
+.conehcimentos-div{
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid rgb(0, 200, 250);;
+    background-color: aliceblue;
+
+    
+}
+.conehcimentos-div img{
+
+   width: 200px;
+   height: 200px;
+   text-align: center;
+}
+.mobile-menu-icon{
+    display: none;
+
+}
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width:1110px) {
+    .image {
+        width:auto;
+    }
+    
+}
+@media screen and (max-width:800px){
+    .section-sobre {
+        display: block;
+    }
+    .section-sobre-img{
+        text-align: center;
+    }
+    .section-inicial{
+        display: block;
+    }
+    .section-inicial-texto{
+        text-align: center;
+    }
+    .section-inicial-texto p{
+        margin: auto; 
+    }
+    .section-inicial-imagem {
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:730px){
+    .cabecalho-nav{
+        padding:1.5rem 4 rem;
+    }
+    .cabecalho-nav {
+        display:none;
+    }
+    .mobile-menu-icon{
+        position: fixed;
+        right: 0;
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu a{
+        color: var(--cor-letras);
+        text-decoration: none;
+        text-align: center;
+        margin-left: auto;
+        margin-top: auto;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open{
+        display: block;
+        margin: auto;
+    }
+}
+@media screen and (max-width:520px) {
+    .section-sobre-div {
+        width: auto;
+        font-size: 18px;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+       
+    }
+    .section-sobre-div span{
+    width: auto;
+    }
+    
+}
