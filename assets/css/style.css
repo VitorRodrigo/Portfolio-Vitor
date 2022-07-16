@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-letras-principais);
     font-family: 'Saira', sans-serif;
 }
 .cabecalho{
