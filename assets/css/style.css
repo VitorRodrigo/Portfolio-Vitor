@@ -54,10 +54,12 @@ body{
     margin: auto;
     
     
+    
 }
 .section-inicial-texto p{
     width: 420px;
     white-space: pre-line;
+   
 }
 p::after{
     content: '|';
@@ -329,5 +331,9 @@ p::after{
     .section-sobre-div span{
     width: auto;
     }
+    .section-inicial-texto p{
+        width: 250px;
+    white-space: inherit;
     
+}
 }
