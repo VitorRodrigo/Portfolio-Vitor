@@ -175,6 +175,7 @@ p::after{
     background-color: #fff;
     padding: 15px;
     animation: fadeIn .2s linear;
+    margin-top: 10%;
 }
 .image img{
     width: 100%;
