@@ -1,0 +1,41 @@
+.principais-jogadores{
+
+    margin: 50px;
+    text-align: center;
+}
+.players{
+    margin-top: 100px;
+}
+.destaque{
+    display: flex;
+    margin-bottom: 150px;
+}
+.imagem-jogador img{
+    width: 550px;
+    height: 400px;
+    object-fit: contain;
+   border: 5px solid black
+}
+
+.texto-jogador{
+    width: 700px;
+    max-height: 500px;
+    margin: auto;
+    border: 5px solid black;
+    overflow: auto;
+   
+
+}
+.texto {
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+   
+   
+}
+
+.messi{
+    display: flex;
+    margin-bottom: 150px;
+}

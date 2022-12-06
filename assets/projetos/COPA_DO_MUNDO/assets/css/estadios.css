@@ -1,0 +1,28 @@
+.gallery-container{
+    display: flex;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 1vw;
+}
+
+.gallery-items{
+    width: 340px;
+    height: 250px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px #0009;
+    flex-grow: 1;
+    transition: trasform .5s linear;
+}
+
+.gallery-items:hover{
+    transform: scale(1.2);
+}
+
+.gallery-items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
